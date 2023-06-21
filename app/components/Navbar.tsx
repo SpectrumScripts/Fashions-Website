@@ -161,11 +161,6 @@ const Navbar = () => {
                   )}
                 </div>
 
-                {/* <div className="flex justify-center md:block">
-                <button className="block py-2 pl-3 pr-4 rounded transition-all duration-300 ease-in-out dark:text-white text-black hover:text-blue-500 dark:hover:text-blue-400 md:p-0" onClick={() => setTheme(theme === "dark" ? "light" : "dark")}>
-                  {theme === "dark" ? <FaSun /> : <FaRegMoon />}
-                </button>
-              </div> */}
               </div>
             </div>
           </nav>
@@ -225,7 +220,6 @@ const Navbar = () => {
               </div>
             </div>
 
-            {/* Mobile Menu open: "block", Menu closed: "hidden" */}
             <div
               className={`absolute inset-x-0 z-20 w-full bg-white px-6 py-4 transition-all duration-300 ease-in-out dark:bg-black md:relative md:top-0 md:mt-0 md:flex md:w-auto md:translate-x-0 md:items-center md:bg-transparent md:p-0 md:opacity-100 ${
                 isOpen
@@ -276,11 +270,6 @@ const Navbar = () => {
                 Signup
               </Link>
 
-              {/* <div className="flex justify-center md:block">
-                <button className="block py-2 pl-3 pr-4 rounded transition-all duration-300 ease-in-out dark:text-white text-black hover:text-blue-500 dark:hover:text-blue-400 md:p-0" onClick={() => setTheme(theme === "dark" ? "light" : "dark")}>
-                  {theme === "dark" ? <FaSun /> : <FaRegMoon />}
-                </button>
-              </div> */}
             </div>
           </div>
         </nav>

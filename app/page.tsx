@@ -15,7 +15,6 @@ export default function Home() {
             </span>
           </div>
 
-          {/* <p className="font-normal text-white text-base md:text-sm xl:text-base">a FASHIONable API-service open to everyone.</p> */}
           <p className="text-base font-normal text-white md:text-sm xl:text-base">
             At "The Fashion Database" (TFDB), we believe that fashion is more
             than just clothing - it's a form of self-expression that should be
@@ -28,15 +27,7 @@ export default function Home() {
             >
               Get Started
             </Link>
-            {/* <a href="#"
-                    className="text-sm md:text-base lg:text-base xl:text-base font-semibold text-white hover:text-gray-600 flex items-center w-fit px-4 py-2 sm:mx-auto md:mx-0 lg:mx-0 xl:mx-0 xl:px-5 xl:py-2">Learn
-                    More
-                    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" fill="none" viewBox="0 0 24 24"
-                        stroke-width="1.5" stroke="currentColor" className="w-5 h-5 ml-2 mt-1">
-                        <path stroke-linecap="round" stroke-linejoin="round"
-                            d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
-                    </svg>
-                </a> */}
+         
           </div>
         </div>
       </div>
