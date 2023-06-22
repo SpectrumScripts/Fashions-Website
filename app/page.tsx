@@ -1,5 +1,5 @@
-import Image from "next/image";
-import Link from "next/link";
+import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Home() {
   return (
@@ -16,18 +16,15 @@ export default function Home() {
           </div>
 
           <p className="text-base font-normal text-white md:text-sm xl:text-base">
-            At "The Fashion Database" (TFDB), we believe that fashion is more
-            than just clothing - it's a form of self-expression that should be
-            accessible to everyone.
+            At "The Fashion Database" (TFDB), we believe that fashion is more than just clothing -
+            it's a form of self-expression that should be accessible to everyone.
           </p>
           <div className="mx-auto flex items-center justify-center space-x-5">
             <Link
-              href={"/docs"}
-              className="flex w-fit rounded bg-white px-4 py-2 text-sm font-semibold text-blue-700 duration-300 hover:scale-110 hover:bg-blue-600  hover:text-white sm:mx-auto md:mx-0  md:text-base lg:mx-0 lg:text-base xl:mx-0 xl:px-5 xl:py-2 xl:text-base"
-            >
+              href={'/docs'}
+              className="flex w-fit rounded bg-white px-4 py-2 text-sm font-semibold text-blue-700 duration-300 hover:scale-110 hover:bg-blue-600  hover:text-white sm:mx-auto md:mx-0  md:text-base lg:mx-0 lg:text-base xl:mx-0 xl:px-5 xl:py-2 xl:text-base">
               Get Started
             </Link>
-         
           </div>
         </div>
       </div>

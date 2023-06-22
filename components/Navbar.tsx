@@ -15,7 +15,7 @@ const Navbar = () => {
   const [isOpenD, setIsOpenD] = useState(true);
 
   const toggleMenu = () => {
-    setIsOpenD(prevIsOpen => !prevIsOpen);
+    setIsOpenD((prevIsOpen) => !prevIsOpen);
   };
   const { data: session } = useSession();
   if (session) {
@@ -130,12 +130,16 @@ const Navbar = () => {
                   {isOpenD && (
                     <div
                       onClick={() => setIsOpenD(false)}
-                      className="absolute right-0 z-20 mt-2 w-60 origin-top-right overflow-hidden rounded-md bg-white py-2 shadow-xl dark:bg-gray-800"
+                      className="absolute sm:right-0 z-20 mt-2 w-60 origin-top-right overflow-hidden rounded-md bg-white py-2 shadow-xl dark:bg-gray-800"
                     >
-                      <span
-                        className="-mt-2 flex transform items-center p-3 text-sm text-gray-600 transition-colors duration-300 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-700 dark:hover:text-white"
-                      >
-                        <Image width={20} height={20} className="flex-shrink-0 object-cover mx-1 rounded-full w-9 h-9" src={session.user?.image} alt="Profile pic"/>
+                      <span className="-mt-2 flex transform items-center p-3 text-sm text-gray-600 transition-colors duration-300 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-700 dark:hover:text-white">
+                        <Image
+                          width={20}
+                          height={20}
+                          className="mx-1 h-9 w-9 flex-shrink-0 rounded-full object-cover"
+                          src={session.user?.image}
+                          alt="Profile pic"
+                        />
 
                         <div className="mx-1">
                           <h1 className="text-sm font-semibold text-gray-700 dark:text-gray-200">
@@ -150,17 +154,17 @@ const Navbar = () => {
                       <hr className="border-gray-200 dark:border-gray-700" />
 
                       <Link
-                      href={'/api/auth/signout?callbackUrl=http%3A%2F%2Flocalhost%3A3000%2Fsignout'}
+                        href={
+                          "/api/auth/signout?callbackUrl=http%3A%2F%2Flocalhost%3A3000%2Fsignout"
+                        }
                         onClick={() => signOut()}
-                        className="mx-auto block w-full text-center transform py-3 text-sm capitalize text-gray-600 transition-colors duration-300 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-700 dark:hover:text-white"
-                      
+                        className="mx-auto block w-full transform py-3 text-center text-sm capitalize text-gray-600 transition-colors duration-300 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-700 dark:hover:text-white"
                       >
                         Sign Out
                       </Link>
                     </div>
                   )}
                 </div>
-
               </div>
             </div>
           </nav>
@@ -253,23 +257,15 @@ const Navbar = () => {
                   Blog
                 </Link>
               </div>
-              <Link
-                href={
-                  "/api/auth/signin?callbackUrl=http%3A%2F%2Flocalhost%3A3000%2Fsignin"
-                }
-                className="mt-4 mr-3 inline-flex  items-center rounded-lg border-0 bg-gray-100 px-3 py-1 text-base hover:bg-gray-200 focus:outline-none md:mt-0"
-              >
-                Signin
-              </Link>
+              
               <Link
                 href={
                   "/api/auth/signin?callbackUrl=http%3A%2F%2Flocalhost%3A3000%2Fsignin"
                 }
                 className="mt-4 inline-flex  items-center rounded-lg border-0 bg-gray-100 px-3 py-1 text-base hover:bg-gray-200 focus:outline-none md:mt-0"
               >
-                Signup
+                Signin
               </Link>
-
             </div>
           </div>
         </nav>
